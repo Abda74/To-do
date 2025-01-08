@@ -72,15 +72,15 @@ const Todo = () => {
                 key={todo.id}>
                 <div className="w-100 me-4 p-2">
                     {editId === todo.id ? (
-                        <div className="d-flex">
+                        <div className="d-flex flex-wrap w-100 ">
                             <input
-                                className="form-control me-2"
+                                className="form-control p-3 mb-1"
                                 value={editTitle}
                                 onChange={(e) => setEditTitle(e.target.value)}
                                 placeholder="Modifier le titre"
                             />
                             <input
-                                className="form-control"
+                                className="form-control p-3"
                                 value={editDescription}
                                 onChange={(e) => setEditDescription(e.target.value)}
                                 placeholder="Modifier la description"
