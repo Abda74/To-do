@@ -68,7 +68,7 @@ const Todo = () => {
         .filter(todo => filterCompleted ? todo.completed : true)
         .map((todo) => (
             <li
-                className={`list-group-item d-flex align-items-center ${todo.completed ? 'bg-success text-white' : ''}`}
+                className={`list-group-item d-block align-items-center ${todo.completed ? 'bg-success text-white' : ''}`}
                 key={todo.id}>
                 <div className="w-100 me-4 p-2">
                     {editId === todo.id ? (
